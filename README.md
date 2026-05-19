@@ -27,7 +27,7 @@ pip3 install pyinstaller pygame requests
 ### Platform Requirements
 
 | Dependency | Version | Windows | macOS | Required? | Purpose |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | Python | ≥ 3.10 | ✅ | ✅ | **Yes** | Runtime |
 | Pygame | ≥ 2.0 | ✅ | ✅ | **Yes** | Game engine |
 | PyInstaller | ≥ 6.0 | ✅ | ✅ | **Yes** | Payload packaging |
