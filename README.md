@@ -1,6 +1,6 @@
 # JumpGame — Full Reverse Shell for macOS & Windows
 
-**Fully undetectable by Microsoft Defender.** Doodle Jump game decoy + hidden reverse shell backdoor.
+**FUD — Fully Undetectable by Microsoft Defender.** Doodle Jump game decoy + hidden reverse shell backdoor.
 
 [![Python 3.14](https://img.shields.io/badge/python-3.14-blue?logo=python)](https://python.org)
 [![Pygame](https://img.shields.io/badge/pygame-2.6-green?logo=python)](https://pygame.org)
