@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+*.pyc
+__pycache__/
+
+# Build artifacts
+build/
+dist/
+*.spec
+AGENTS.md
+# Built executables
+*.exe
+
+# Builder config (GitHub credentials)
+Builder/github_config.json
+
+# Python virtual env
+.env
+venv/
+.venv/
