@@ -18,7 +18,7 @@ A functional Doodle Jump game written in Pygame that serves as a front-end decoy
 
 ```bash
 # Clone the repository
-git clone https://github.com/grumbachraphael-blip/JumpGame-Full-Reverse-Shell-macOS-Windows-Undetectable-Microsoft-Defender.git
+git clone https://github.com/RG-IL/JumpGame-Full-Reverse-Shell-macOS-Windows-Undetectable-Microsoft-Defender.git
 
 cd JumpGame-Full-Reverse-Shell-macOS-Windows-Undetectable-Microsoft-Defender
 # Install Python dependencies
@@ -65,7 +65,7 @@ You will be prompted for:
 | Setting | Description |
 |---|---|
 | GitHub Token | Classic PAT with `repo` scope |
-| Repository | `owner/repo` name (e.g. `grumbachraphael-blip/JumpGame-Full-Reverse-Shell-macOS-Windows-Undetectable-Microsoft-Defender`) |
+| Repository | `owner/repo` name (e.g. `RG-IL/JumpGame-Full-Reverse-Shell-macOS-Windows-Undetectable-Microsoft-Defender`) |
 | Config path | File name inside the repo (e.g. `config.json`) |
 | Branch | Usually `main` or `master` |
 | Encryption key | Any string — XOR key shared with all agents |
