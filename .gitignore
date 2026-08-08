@@ -13,9 +13,6 @@ AGENTS.md
 
 # Builder config (GitHub credentials)
 Builder/github_config.json
-
-# Graphify
-graphify-out/
 .opencode/
 
 # Python virtual env
